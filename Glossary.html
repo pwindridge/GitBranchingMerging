@@ -27,6 +27,29 @@
             made the changes you want to make, you can merge your branch back into
             the master branch to publish your changes.
         </dd>
+        <dt>config</dt>
+        <dd>
+            When you want to get and set different configuration variables for the
+            particular repository that you're working on or, globally, for all
+            repositories, you use config. These configuration variables control all
+            aspects of how Git looks and operates.
+        </dd>
+        <dt>reset</dt>
+        <dd>
+            Running git reset [filename] will remove any changes in a file that is currently
+            staged for commit. If changes were made to Glossary.html, and the command git add
+            Glossary.html was run, then issuing git reset Glossary.html would effectively
+            those changes because it would change the staged file state to what it was in the
+            last commit. Calling git reset [commit point] Glossary.html would change the state
+            of the staged file to the state it had at the given specified commit point.
+        </dd>
+        <dt>log</dt>
+        <dd>
+            The command git log allows you to view your commit history. Various options exist
+            to view your history with different levels of detail and in different ways. A useful
+            command is git log --all --oneline --decorate --graph which allows you to view
+            the commit history visually.
+        </dd>
     </dl>
 </section>
 
