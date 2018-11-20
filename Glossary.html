@@ -27,6 +27,15 @@
             made the changes you want to make, you can merge your branch back into
             the master branch to publish your changes.
         </dd>
+        <dt>reset</dt>
+        <dd>
+            The reset command is one of the very few git commands that will destroy data if
+            it is used with the --hard flag. git reset --hard [commit point] will take
+            everything back to a specified commit point. Any un-committed changes will be lost.
+            The default git reset [commit point] undoes the last git commit and git add commands
+            but leaves the working tree as it is. The command git reset --soft [commit point]
+            just resets the last commit command but leaves the previous staged changes.
+        </dd>
     </dl>
 </section>
 
